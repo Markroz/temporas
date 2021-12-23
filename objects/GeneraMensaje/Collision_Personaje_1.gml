@@ -1,0 +1,2 @@
+
+iniciado = true;

@@ -1,0 +1,2 @@
+
+Gestor.detenido = false;
