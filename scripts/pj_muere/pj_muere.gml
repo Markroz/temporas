@@ -25,4 +25,36 @@ function pj_muere(){
 	shift = false;
 	dispara = false;
 	pause = false;
+	
+	mensaje = instance_create_layer(Personaje.x,Personaje.y,"medio",GeneraMensaje);
+	mensaje.detener = false;
+	
+	texto_mensaje = ""
+	randomize();
+	numero = irandom_range(0,6);
+	switch(numero){
+		case 0:
+			texto_mensaje = "Que pendejo te moriste jajajaja";
+			break;
+		case 1:
+			texto_mensaje = "JAJAJAJAJAJA";
+			break;	 
+		case 2:
+			texto_mensaje = "Intenta no morir, por favor";
+			break;	
+		case 3:
+			texto_mensaje = "¿Estas bromeando?";
+			break;	
+		case 4:
+			texto_mensaje = "¿Eres tonto o comes pronto?";
+			break;	 
+		case 5:
+			texto_mensaje = "a ver dijo el ciego...";
+			break;	
+		case 6:
+			texto_mensaje = "Es que eres tontisimo...";
+			break;	
+	}
+	
+	mensaje.mensajes[0] = nuevo_mensaje(texto_mensaje,ada,1.5,mensaje.detener);
 }

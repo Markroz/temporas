@@ -47,8 +47,8 @@ function guardar_reinicio(){
 function cargar(){
 	
 	if(file_exists(working_directory + "guardar.tana")){
-		
 	}
+	
 		ini_open(working_directory + "guardar.tana");
 		var rm = ini_read_real("pj","rm",Nivel1);
 		var v = ini_read_real("pj","vida", 3);

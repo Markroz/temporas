@@ -18,11 +18,11 @@ if(!Gestor.detenido){
 		}
 	}
 	
-	if(collision_rectangle(x-8,y-2,x+8,y+2,escalera,false,false)){
+	if(collision_rectangle(x-4,y-2,x+4,y+1,escalera,false,false)){
 		en_escalera = true;
 		if(Gestor_teclas.up){
 			repeat(2){
-				if(place_free(x, y-1) && collision_rectangle(x-8,y-2,x+8,y,escalera,false,false)){
+				if(place_free(x, y-1) && collision_rectangle(x-4,y-2,x+4,y,escalera,false,false)){
 					y -= 1;
 				}
 			}
@@ -49,7 +49,7 @@ if(!Gestor.detenido){
 			if(!audio_is_playing(salto_sonido)) audio_play_sound(salto_sonido,0.2,false);
 
 			Gestor.saltos++;
-			vspeed = -6.5;
+			vspeed = -5.5;
 		
 		}
 	}

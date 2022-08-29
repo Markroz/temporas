@@ -6,7 +6,7 @@ if(!Gestor.no_cae){
 	var sa1 = collision_rectangle(x-4,y-2,x+4,y+1,solido_original,false,false);
 	
 	if(!sa1 && !sa){
-		gravity = 0.35;
+		gravity = 0.25;
 	}else{
 		gravity = 0;	
 		vspeed = 0;
